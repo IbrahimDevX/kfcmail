@@ -1,2 +1,2 @@
 # Welcome to KFCmail.
-the best email provudei j eartn
+best email in the world
