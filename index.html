@@ -34,7 +34,7 @@ document.getElementById("myinput").onclick = function() {
         return response.json();
     }) 
     .then(function(data){ 
-    document.getElementById("message").innerHTML = "Your short link is " + data.shortURL })
+    document.getElementById("message").innerHTML = "Your shortened link is " + data.shortURL })
     document.getElementById("linkinput").value='';
  }
     </script>
