@@ -1,7 +1,7 @@
 body {
 font-family: 'Lato', sans-serif;
 }
-input[type=button], input[type=submit], input[type=reset] {
+a.button {
 background:    #3592e7;
 border-radius: 11px;
 padding:       22px 47px;
@@ -11,4 +11,4 @@ font:          normal bold 26px/1 'Lato', sans-serif;
 text-align:    center;
 outline: none;
 }
-​
+
