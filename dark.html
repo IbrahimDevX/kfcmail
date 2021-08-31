@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="icon" 
+      type="image/png" 
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/rocket_1f680.png">
+    <link>
+    <title> ch.co.vu </title>
+    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://ibrahim.is-a.dev/CSS/chcovu.css">
+    <!-- Primary Meta Tags -->
+<title>ch.co.vu | the fastest link shortner</title>
+<meta name="title" content="ch.co.vu | the fastest link shortner">
+<meta name="description" content="start making your links short and simple with ch.co.vu ">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chcovu.co.vu/">
+<meta property="og:title" content="ch.co.vu | the fastest link shortner">
+<meta property="og:description" content="start making your links short and simple with ch.co.vu ">
+<meta property="og:image" content="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/rocket_1f680.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://chcovu.co.vu/">
+<meta property="twitter:title" content="ch.co.vu | the fastest link shortner">
+<meta property="twitter:description" content="start making your links short and simple with ch.co.vu ">
+<meta property="twitter:image" content="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/rocket_1f680.png">
+
+  </head>
+  <body class="dark-mode">
+    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/rocket_1f680.png" width="200" height="200">
+    <center>
+    <h1 class="message">Shorten a link today!</h1>
+      <div>
+          <input name="text"   class="URL-input" type="url" value  id="linkinput" placeholder="Paste a URL to shorten" >
+         <input type="submit" class="convert-button" "type="button" class="button" id="myinput" value="submit"> 
+        </a>
+      </div>
+    <p id="message"></p>
+ <script>
+document.getElementById("myinput").onclick = function() {
+  var link = document.getElementById("linkinput").value;
+  var data = {
+    "domain":"ch.co.vu",
+    "originalURL": link,
+    "allowDuplicates":false }; 
+ fetch('https://api.short.cm/links/public', {
+    method: 'post',
+    headers: {
+      'accept': 'application/json',
+      'Content-Type': 'application/json',
+      'authorization': 'pk_5HEWuR0yWqkbAb7D'
+    },
+    body: JSON.stringify(data)
+  }) .then(function(response) {
+        return response.json();
+    }) 
+    .then(function(data){ 
+    document.getElementById("message").innerHTML = "Your shortened link is " + data.shortURL })
+    document.getElementById("linkinput").value='';
+ }
+    </script>
+    </center>
+                                       <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+  </body>
+</html>
